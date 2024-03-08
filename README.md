@@ -1,1 +1,1 @@
-To run you need have node.js installed, The npm package and webpack encore
+To run you need have node.js installed, the npm package and webpack encore
