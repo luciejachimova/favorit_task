@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3a55f65fe9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Favorit</title>
+  </head>
+  <body>
+    <!-- Hero Section-->
+    <div class="hero">
+      <div class="hero__container">
+        <div class="hero__container--left">
+          <img
+            src="./styles/image/favorit.jpeg"
+            alt="favorit"
+            class="hero__container--img"
+          />
+        </div>
+        <div class="hero__container--right">
+          <label class="hero__label">recenze</label>
+          <h1>
+            Favorit Fun byl předvojem bláznivé Felicie. Škoda ho představila
+            před 30 lety
+          </h1>
+          <!--Icons-->
+          <div class="hero__additional-info">
+            <span class="hero__additional-info--name">
+              <i class="fa-regular fa-user"></i> Lucie Jáchimová
+            </span>
+            <span class="hero__additional-info--date">
+              <i class="fa-regular fa-calendar-days"></i>
+            </span>
+          </div>
+          <p>
+            Automobilka Škoda na autosalonu ve Franfurktu v roce 1993
+            představila studii vozu Favorit Fun. Vznikl z karosářské verze
+            pick-up.
+          </p>
+          <!--Start Dropdown-->
+          <div class="hero__dropdown">
+            <span class="hero__dropdown--icon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+            <input
+              class="hero__dropdown--input"
+              type="text"
+              id="selectFuels"
+              placeholder="Vyberte "
+              onclick="toggleDropdown()"
+              readonly
+            />
+            <div class="hero__dropdown--content" id="dropdownContent">
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="benzin"
+                  type="checkbox"
+                  value="Benzín"
+                />
+                <span class="hero__dropdown--items">Benzín</span>
+                <span class="hero__dropdown--numbers">(350k)</span></label
+              >
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="nafta"
+                  type="checkbox"
+                  value="Nafta"
+                />
+                <span class="hero__dropdown--items">Nafta</span>
+                <span class="hero__dropdown--numbers">(55k)</span></label
+              >
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="elektro"
+                  type="checkbox"
+                  value="Elektro"
+                />
+                <span class="hero__dropdown--items">Elektro</span>
+                <span class="hero__dropdown--numbers">(973)</span></label
+              >
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="hybrid"
+                  type="checkbox"
+                  value="Hybrid"
+                />
+                <span class="hero__dropdown--items">Hybrid</span>
+                <span class="hero__dropdown--numbers">(55k)</span></label
+              >
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="lpg"
+                  type="checkbox"
+                  value="LPG"
+                />
+                <span class="hero__dropdown--items">LPG</span>
+                <span class="hero__dropdown--numbers">(55k)</span></label
+              >
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="vodik"
+                  type="checkbox"
+                  value="Vodík"
+                />
+                <span class="hero__dropdown--items">Vodík</span>
+                <span class="hero__dropdown--numbers">(55k)</span></label
+              >
+              <label
+                ><input
+                  class="fuel-checkbox"
+                  id="cng"
+                  type="checkbox"
+                  value="CNG"
+                />
+                <span class="hero__dropdown--items">CNG</span>
+                <span class="hero__dropdown--numbers">(55k)</span></label
+              >
+              <button class="hero__dropdown--btn" onclick="continueClicked()">
+                Pokračovat
+              </button>
+            </div>
+          </div>
+          <!--End Dropdown-->
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
