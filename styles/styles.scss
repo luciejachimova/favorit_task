@@ -1,0 +1,190 @@
+@import "colors";
+@import "media-queries";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hero {
+  background-color: $light;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    justify-items: center;
+    margin-top: 5rem;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+
+    &--left {
+      padding: 0 20px;
+    }
+
+    &--left img {
+      width: 100%;
+      border-radius: 15px;
+
+      @include tablet {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    &--right {
+      line-height: 1.2;
+      padding: 0 20px;
+
+      @include tablet {
+        padding: 0.9rem 1rem;
+        margin-left: 0rem;
+      }
+
+      @include mobile {
+        line-height: 1.5;
+        margin-left: 0rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: $primary;
+        font-weight: 700;
+        margin-top: 0.5rem;
+
+        @include tablet {
+          font-size: 2rem;
+        }
+
+        @include mobile {
+          font-size: 1.8rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $secondary;
+        margin-top: 1rem;
+
+        @include tablet {
+          font-size: 1rem;
+        }
+
+        @include mobile {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  &__label {
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-transform: lowercase;
+    padding: 3px 6px;
+    font-size: 1rem;
+    line-height: 1.18;
+    letter-spacing: 1.2px;
+    background-color: $green;
+    color: $primary;
+  }
+
+  &__additional-info {
+    margin-top: 1rem;
+
+    &--name,
+    &--date {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1rem;
+      color: $primary;
+
+      i {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+
+    &-- {
+      position: absolute;
+      left: 15px;
+      top: 0;
+      font-size: 25px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--icon {
+      position: absolute;
+      left: 158px;
+      top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--input {
+      font-size: 1rem;
+      padding: 0.2rem 0.7rem;
+      margin-top: 1rem;
+      border: 1px solid #ddd;
+    }
+
+    @include mobile {
+      padding: 0.2rem 8rem 0.2rem 0rem;
+    }
+
+    &--content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 180px;
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+    }
+
+    &--content label {
+      display: block;
+      padding: 7px;
+    }
+
+    &--items {
+      font-size: 0.9rem;
+    }
+
+    &--numbers {
+      font-size: 0.7rem;
+      color: $secondary;
+    }
+
+    &--btn {
+      width: 100%;
+      height: 40px;
+      font-size: 1rem;
+      color: $light;
+      background-color: $red;
+      border: none;
+    }
+  }
+}
