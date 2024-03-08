@@ -1,1 +1,1 @@
-This is task for Greipi ( Coder exercise)
+This is task for Greipi ( Coder exercise).
