@@ -131,7 +131,7 @@
 .hero__dropdown--icon {
   position: absolute;
   left: 158px;
-  top: 25px;
+  top: 23px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +151,7 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 180px;
+  min-width: 187px;
   max-height: 200px;
   overflow-y: auto;
   border: 1px solid #ddd;
